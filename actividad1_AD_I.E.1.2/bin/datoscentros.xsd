@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<!--Definición de los tipos simples-->
+<xs:simpleType name="tipoCadena">
+    <xs:restriction base="xs:string"/>
+</xs:simpleType>
+
+<xs:simpleType name="tipoNumero">
+    <xs:restriction base="xs:positiveInteger"/>
+</xs:simpleType>
+
+<!--Definición de los tipos complejos-->
+<xs:complexType name="tipoProfesor">
+    <xs:sequence>
+        <xs:element name="codigoprofesor" type="tipoNumero"/>
+        <xs:element name="nombreprofesor" type="tipoCadena"/>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="tipoProfesores">
+    <xs:sequence>
+        <xs:element name="profesor" type="tipoProfesor" maxOccurs="unbounded"/>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="tipoCentro">
+    <xs:sequence>
+        <xs:element name="codigocentro" type="tipoNumero"/>
+        <xs:element name="nombrecentro" type="tipoCadena"/>
+        <xs:element name="direccion" type="tipoCadena"/>
+        <xs:element name="director" type="tipoProfesor"/>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="tipoDatosCentro">
+    <xs:sequence>
+        <xs:element name="centro" type="tipoCentro"/>
+        <xs:element name="profesores" type="tipoProfesores"/>
+    </xs:sequence>
+</xs:complexType>
+
+<!--Definición del elemento raiz-->
+<xs:element name="datoscentro" type="tipoDatosCentro"/>
+
+</xs:schema>

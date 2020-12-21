@@ -1,0 +1,23 @@
+1604655276458	Rename package 'com.everis.EverisHibernateDesafio1'
+1604655342069	Rename package 'com.everis.hibernate.repository'
+1604656192345	Rename type 'EverisClientBaseDao'
+1604656232648	Rename type 'EverisClientBaseDAO'
+1604657769418	Rename type 'EverisClientsBaseDAO'
+1604657779843	Rename type 'EverisClientsRepository'
+1604657790078	Rename type 'EverisClientsRepositoryDAO'
+1604666513709	Rename type 'EverisClientBaseDAO'
+1604666537621	Rename type 'EverisClientDAO'
+1604680906355	Delete element
+1604681974942	Move file
+1604682166023	Move file
+1604682253790	Move file
+1604685654484	Rename field 'clientLastName1'
+1604685680535	Rename field 'clientLastName2'
+1604687497407	Delete element
+1604699511398	Delete element
+1604700189783	Delete element
+1604700200123	Rename package 'com.everis.hibernate.repositories'
+1604700254722	Infer generic type arguments
+1604739118903	Delete element
+1604739424598	Delete element
+1604740047903	Delete element

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Jugadores.java&apos; to &apos;NeoDatis/src/neodatis&apos;&#x0D;&#x0A;- Original project: &apos;actividad&apos;&#x0D;&#x0A;- Destination element: &apos;NeoDatis/src/neodatis&apos;&#x0D;&#x0A;- Original element: &apos;com.neodatis.actividad.Jugadores.java&apos;" description="Copy compilation unit" destination="=NeoDatis/src&lt;neodatis" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.neodatis.actividad{Jugadores.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1604920927143" units="1" version="1.0"/>
+</session>

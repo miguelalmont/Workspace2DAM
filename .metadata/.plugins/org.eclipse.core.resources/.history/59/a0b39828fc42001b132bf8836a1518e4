@@ -1,0 +1,30 @@
+package actividad8;
+
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+
+public class Cliente {
+
+	public static void main(String[] args) throws IOException {
+		
+		System.out.println("Programa cliente iniciado....");
+		DatagramSocket cliente = new DatagramSocket();
+
+		Persona persona = new Persona("María", 35);
+		
+		ByteArrayOutputStream bs = new ByteArrayOutputStream();
+		ObjectOutputStream out = new ObjectOutputStream(bs);
+		
+		out.writeObject(persona);
+		out.close();
+		byte[] bytes = bs.toByteArray();
+		DatagramPacket peticion = new DatagramPacket(bytes, bytes.length, 6000);
+		socketUDP.send(peticion);
+		cliente.close();
+		
+	}
+
+}

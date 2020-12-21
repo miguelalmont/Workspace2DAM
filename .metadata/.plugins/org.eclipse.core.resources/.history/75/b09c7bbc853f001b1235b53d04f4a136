@@ -1,0 +1,52 @@
+package com.everis.proyectoc.services;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.everis.proyectoc.repositories.Teams;
+import com.everis.proyectoc.repositories.TeamsRepositoryI;
+
+public class TeamsServiceImpl implements TeamsServiceI{
+	
+	@Autowired
+	TeamsRepositoryI teamsRepository;
+
+	@Override
+	public void addTeam(Teams team) {
+		
+		teamsRepository.save(team);
+	}
+
+	@Override
+	public List<Teams> getAllTeams() {
+		
+		return teamsRepository.findAll();
+	}
+
+	@Override
+	public Teams getTeamByID(int teamId) {
+		
+		return teamsRepository.findTeamsByTeamId(teamId);
+	}
+
+	@Override
+	public void removeTeamByID(int teamId) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void modifyTeam(Teams team) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public List<Teams> getTeamByName(String teamName) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+}

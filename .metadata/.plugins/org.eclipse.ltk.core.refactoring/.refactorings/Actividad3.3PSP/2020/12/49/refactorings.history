@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;Actividad3.4PSP/src/actividad4&apos;&#x0D;&#x0A;- Original project: &apos;Actividad3.3PSP&apos;&#x0D;&#x0A;- Destination element: &apos;Actividad3.4PSP/src/actividad4&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     actividad3.Servidor.java&#x0D;&#x0A;     actividad3.Cliente.java" description="Copy compilation units" destination="=Actividad3.4PSP/src&lt;actividad4" element1="/src&lt;actividad3{Servidor.java" element2="/src&lt;actividad3{Cliente.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1606941889943" units="2" version="1.0"/>
+</session>

@@ -1,0 +1,23 @@
+package actividad8;
+
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+
+public class Cliente {
+
+	public static void main(String[] args) throws IOException {
+
+		Persona persona = new Persona("María", 25);
+		
+		ByteArrayOutputStream bs = new ByteArrayOutputStream();
+		ObjectOutputStream out = new ObjectOutputStream(bs);
+		
+		out.writeObject(persona);
+		out.close();
+		byte[] bytes = bs.toByteArray();
+		
+		
+	}
+
+}

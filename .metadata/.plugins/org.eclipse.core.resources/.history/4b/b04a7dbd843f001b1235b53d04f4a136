@@ -1,0 +1,46 @@
+package com.everis.proyectoc.services;
+
+import java.util.List;
+
+import com.everis.proyectoc.repositories.Teams;
+
+public class TeamsServiceImpl implements TeamsServiceI{
+
+	@Override
+	public void addTeam(Teams team) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public List<Teams> getAllTeams() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void getTeamByID(int teamId) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void removeTeamByID(int teamId) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void modifyTeam(Teams team) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public List<Teams> getTeamByName(String teamName) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+}

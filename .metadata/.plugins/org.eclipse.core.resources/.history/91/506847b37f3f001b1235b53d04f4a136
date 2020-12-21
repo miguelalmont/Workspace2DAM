@@ -1,0 +1,11 @@
+package com.everis.proyectoc.services;
+
+import com.everis.proyectoc.repositories.Teams;
+
+public interface TeamsServiceI {
+	
+	public void addTeam(final Teams team);
+	
+	public List<Teams> getAllTeams();
+
+}

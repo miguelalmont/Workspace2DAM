@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;actividad8.Hilo&apos; to &apos;IngresarDinero&apos;&#x0D;&#x0A;- Original project: &apos;Actividad2.8PSP&apos;&#x0D;&#x0A;- Original element: &apos;actividad8.Hilo&apos;&#x0D;&#x0A;- Renamed element: &apos;actividad8.IngresarDinero&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Hilo&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;actividad8{Hilo.java[Hilo" matchStrategy="1" name="IngresarDinero" qualified="false" references="true" similarDeclarations="false" stamp="1605269096953" textual="false" version="1.0"/>
+</session>

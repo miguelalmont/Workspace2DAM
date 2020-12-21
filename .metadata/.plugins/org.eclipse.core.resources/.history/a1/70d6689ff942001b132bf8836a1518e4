@@ -1,0 +1,30 @@
+package actividad8;
+
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.net.Socket;
+
+public class Cliente {
+
+	public static void main(String[] args) throws IOException {
+		
+		System.out.println("Programa cliente iniciado....");
+		String host = "localhost";
+		int puerto = 6000;
+		Socket cliente;
+		
+		cliente = new Socket(host, puerto);
+
+		Persona persona = new Persona("María", 25);
+		
+		ByteArrayOutputStream bs = new ByteArrayOutputStream();
+		ObjectOutputStream out = new ObjectOutputStream(bs);
+		
+		out.writeObject(persona);
+		out.close();
+		byte[] bytes = bs.toByteArray();
+		cliente.close();
+	}
+
+}

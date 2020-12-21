@@ -1,0 +1,34 @@
+package actividad8;
+
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+
+public class Servidor {
+
+	public static void main(String[] args) throws IOException, ClassNotFoundException {
+		
+		System.out.println("Programa servidor iniciado....");
+		int puerto = 6000;
+		DatagramSocket servidor = new DatagramSocket(puerto);
+		
+		System.out.println("Esperando al cliente....");
+		
+		byte[] recibidos = new byte[1024];
+		DatagramPacket paqRecibido = new DatagramPacket(recibidos, recibidos.length);
+		servidor.receive(paqRecibido);
+		
+		ByteArrayInputStream bais = new ByteArrayInputStream(recibidos);
+		ObjectInputStream in = new ObjectInputStream(bais);
+		Persona persona = (Persona) in.readObject();
+		
+		persona.setNombre("Mario");
+		persona.setEdad(52);
+		
+		in.close();
+		
+	}
+
+}

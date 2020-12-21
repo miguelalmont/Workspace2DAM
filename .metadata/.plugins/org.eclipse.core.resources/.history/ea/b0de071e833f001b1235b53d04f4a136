@@ -1,0 +1,45 @@
+package com.everis.proyectoc.services;
+
+import java.util.List;
+
+import com.everis.proyectoc.repositories.SoccerGames;
+
+public class SoccerGamesServiceImpl implements SoccerGamesServiceI{
+
+	@Override
+	public void addGame(SoccerGames game) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public List<SoccerGames> getAllGames() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void getGameByID(int gameId) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void removeGameByID(int gameId) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void modifyGame(SoccerGames game) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public List<SoccerGames> getGameByTeamName(String teamName) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

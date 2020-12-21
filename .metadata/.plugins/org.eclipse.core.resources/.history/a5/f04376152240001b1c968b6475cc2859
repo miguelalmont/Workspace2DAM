@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>LIGA APP</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body class="card-body">
+	<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+		<a class="navbar-brand" th:href="@{/insert-team-form}" role="button">Añadir equipo</a>
+		<a class="navbar-brand" th:href="@{/insert-match-form}" role="button">Añadir partido</a>
+		<a class="navbar-brand" th:href="@{/ranking}" role="button">Ver clasificación</a>
+	</nav>
+	
+	<div class="card text-black bg-white mb-3">
+		  	<div class="card-body">
+				<h4>Binvenido a la liga futbolera</h4>
+			</div>
+		</div>
+
+</body>
+</html>
